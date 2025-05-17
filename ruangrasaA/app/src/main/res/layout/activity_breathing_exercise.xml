@@ -1,0 +1,49 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/hint_blue">
+
+    <TextView
+        android:id="@+id/tvMusicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breathing Exercise"
+        android:textColor="@color/blue"
+        android:backgroundTint="@color/hint_blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+    <!-- Add ImageView for the breathing exercise image -->
+    <ImageView
+        android:id="@+id/imgBreathingExercise"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/breathingexercise"
+        android:background="@drawable/circle_shape"
+        android:contentDescription="Breathing Exercise Image"
+        android:layout_marginBottom="16dp" />
+
+    <ImageButton
+        android:id="@+id/btnPlayPause"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/play"
+        android:contentDescription="Play/Pause Button" />
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="8dp"/>
+
+
+
+</LinearLayout>

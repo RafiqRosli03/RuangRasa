@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24220912256",
+    "project_id": "ruangrasaa-2febd",
+    "storage_bucket": "ruangrasaa-2febd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24220912256:android:1d66018ed8458a69913465",
+        "android_client_info": {
+          "package_name": "com.example.ruangrasaa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB_24Xv9qJX7k9a7mfC8zqleiuTEw_Grs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

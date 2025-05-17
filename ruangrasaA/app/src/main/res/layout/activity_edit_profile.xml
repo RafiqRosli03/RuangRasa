@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/hint_blue">
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_default_profile"
+        android:contentDescription="@string/profile_image"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/circle_shape"
+        android:padding="8dp" />
+
+    <!-- Name Input Field -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Name"
+        android:textColorHint="@color/blue"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+    <!-- Address Input Field -->
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Address"
+        android:textColorHint="@color/blue"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+    <!-- Bio Input Field -->
+    <EditText
+        android:id="@+id/bioEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Bio"
+        android:textColorHint="@color/blue"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
+
+    <!-- Age Input Field -->
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Age"
+        android:textColorHint="@color/blue"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bioEditText" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/ageEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="8dp">
+
+        <ImageButton
+            android:id="@+id/editProfileButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="100dp"
+            android:background="@null"
+            android:contentDescription="Edit Profile"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_edit_profile"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="100dp"
+            android:background="@null"
+            android:contentDescription="Home"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:contentDescription="Logout"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_logout"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
